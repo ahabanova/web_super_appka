@@ -1,0 +1,254 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.stranka {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hlavicka {
+  display: flex;
+}
+
+.hamburger {
+  height: 24px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.otevreno-hamburger {
+  position: fixed;
+  right: 0;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #25133d;
+  width: 95%;
+  margin: 10px 0 10px 10px;
+}
+
+.navigace {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  background-color: white;
+  padding-top: 34px;
+  padding-bottom: 1000px;
+}
+
+.otevreno {
+  left: 0;
+}
+
+.tlacitka-navigace {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.tlacitko-navigace {
+  text-decoration: none;
+  width: 100%;
+  color: black;
+  padding: 10px;
+}
+
+.tlacitko-navigace:hover {
+  background-color: #48418e;
+  color: white;
+}
+
+.uvod {
+  color: white;
+  background: #48418e url("images/pozadi.jpg") no-repeat;
+  background-size: cover;
+  padding: 5px 20px 20px 20px;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.slogan {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.tlacitka {
+  width: 200px;
+}
+
+.tlacitko-uvod {
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+.uvod-stahnout {
+  background-color: #48418e;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.uvod-informace:hover {
+  background-color: #25133d;
+}
+
+.uvod img {
+  display: none;
+}
+
+.informace {
+  text-align: center;
+  padding: 30px 30px 0 30px;
+}
+
+.informace img {
+  width: 60px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #48418e;
+  margin: 20px 0;
+}
+
+.informace p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.dobrodruzstvi p {
+  margin-bottom: 60px;
+}
+
+.paticka {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  background-color: #48418e;
+  padding: 10px;
+}
+
+
+@media (min-width: 800px) {
+
+  h1 {
+    width: 40%;
+  }
+
+  .navigace {
+    position: static;
+    width: 60%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .tlacitka-navigace {
+    flex-wrap: nowrap;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .uvod {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
+  .uvod img {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 344px;
+  }
+
+  .tlacitka {
+    width: 100%;
+  }
+
+  .informace {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: center;
+  }
+
+  .tvrzeni {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+
+@media (min-width: 1400px) {
+  h1 {
+    width: 65%;
+  }
+
+  .navigace {
+    width: 35%;
+  }
+
+  h2 {
+    font-size: 90px;
+  }
+
+  .slogan {
+    font-size: 36px;
+  }
+
+  .uvod {
+    padding-bottom: 50px;
+  }
+
+  .uvod img {
+    height: 390px;
+  }
+
+  .informace {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .informace p {
+    margin-bottom: 60px;
+  }
+
+  .tvrzeni {
+    width: calc((100% - 40px) / 3);
+  }
+}
